@@ -1,16 +1,11 @@
-function hwhAudioPlay(elem, max, times) {
-    elem.play();
-    var start = 0;
-    elem.addEventListener("ended", function () {
-        start++;
-        if (start < max) {
+var btn = document.getElementById('btn');
+var btn1 = document.getElementById('btn1');
+var sound = document.getElementById('sound');
+btn.onclick = function () {
+    sound.play()
 
-            setTimeout(function () { elem.play(); }, times);
-        } else {
-            elem.pause();
-        }
-    });
 }
 
-var myAuto = document.getElementById('sound');
-hwhAudioPlay(myAuto, 3, 2000);
+btn1.onclick = function () {
+    sound.pause();
+}
