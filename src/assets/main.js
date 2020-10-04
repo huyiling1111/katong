@@ -1,11 +1,9 @@
-var btn = document.getElementById('btn');
-var btn1 = document.getElementById('btn1');
-var sound = document.getElementById('sound');
-btn.onclick = function () {
-    sound.play()
+let btn = document.getElementById('btn');
 
-}
+let sound = document.getElementById('sound');
 
-btn1.onclick = function () {
-    sound.pause();
-}
+btn.addEventListener('click', () => {
+    setTimeout(() => { sound.play() }, 1000)
+    setTimeout(() => { sound.pause() }, 3400)
+
+})
