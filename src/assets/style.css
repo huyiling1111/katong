@@ -118,40 +118,38 @@ html {
 
 .face {
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background: #ff5140;
+  background: red;
   border: 2px solid black;
   top: 85px;
   left: 50%;
   margin-left: -32px;
-  animation: cheekMove 3s infinite;
+  animation: cheekMove 1.2s infinite ease-in-out;
 }
 
 .face.left {
-  transform: translateX(-145px);
+  transform: translateX(-130px);
 }
 
 .face.right {
   transform: translateX(130px);
 }
 
-@-webkit-keyframes cheekMove {
-  0%,
-  46%,
-  50%,
-  100% {
-    width: 80px;
-    height: 80px;
-    background: red;
+@keyframes cheekMove {
+  0% {
+    background: #cf6d64;
   }
 
-  50%,
-  60% {
-    width: 64px;
-    height: 64px;
-    background: #df9089;
+  40%,
+  50% {
+    width: 65px;
+    height: 65px;
+    background: red;
+  }
+  100% {
+    background: #cf6d64;
   }
 }
 
