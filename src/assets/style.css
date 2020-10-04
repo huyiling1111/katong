@@ -126,11 +126,11 @@ html {
   top: 85px;
   left: 50%;
   margin-left: -32px;
-  animation: cheekMove 1.2s infinite ease-in-out;
+  animation: cheekMove 3s infinite ease-in-out;
 }
 
 .face.left {
-  transform: translateX(-130px);
+  transform: translateX(-135px);
 }
 
 .face.right {
@@ -138,14 +138,12 @@ html {
 }
 
 @keyframes cheekMove {
-  0% {
-    background: #cf6d64;
-  }
-
+  0%,
   40%,
-  50% {
-    width: 65px;
-    height: 65px;
+  50%,
+  80% {
+    width: 70px;
+    height: 70px;
     background: red;
   }
   100% {
